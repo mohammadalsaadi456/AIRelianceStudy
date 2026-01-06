@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findings - AI Reliance Study</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <i class="fas fa-robot"></i>
+                <span>AI Reliance Study</span>
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-menu" id="navMenu">
+                <a href="../index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html" class="nav-link"><i class="fas fa-users"></i> About</a>
+                <a href="framework.html" class="nav-link"><i class="fas fa-sitemap"></i> Framework</a>
+                <a href="findings.html" class="nav-link active"><i class="fas fa-chart-bar"></i> Findings</a>
+                <a href="experiment.html" class="nav-link"><i class="fas fa-flask"></i> Experiment</a>
+                <a href="resources.html" class="nav-link"><i class="fas fa-folder"></i> Resources</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                <div class="theme-toggle">
+                    <button id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Research Findings</h1>
+            <p>Discover what we learned from student interviews and experiments</p>
+        </div>
+    </section>
+
+    <!-- Charts Section -->
+    <section class="charts-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Data Visualizations</h2>
+                <p class="section-subtitle">See our results in charts and graphs</p>
+            </div>
+            
+            <div class="charts-container">
+                <div class="chart-card">
+                    <h3>Academic Integrity Views</h3>
+                    <p>Do students care about academic honesty when using AI?</p>
+                    <div class="chart-wrapper">
+                        <canvas id="integrityChart"></canvas>
+                    </div>
+                    <div class="chart-insight">
+                        <i class="fas fa-lightbulb"></i>
+                        <p>Half of students said they care about academic integrity, while the other half admitted they don't really care.</p>
+                    </div>
+                </div>
+                
+                <div class="chart-card">
+                    <h3>Student Perceptions of AI</h3>
+                    <p>How do students feel about using AI for schoolwork?</p>
+                    <div class="chart-wrapper">
+                        <canvas id="perceptionChart"></canvas>
+                    </div>
+                    <div class="chart-insight">
+                        <i class="fas fa-lightbulb"></i>
+                        <p>Most students see AI as a helpful tool, but some worry about over reliance.</p>
+                    </div>
+                </div>
+                
+                <div class="chart-card">
+                    <h3>Experiment Results</h3>
+                    <p>Did our framework help students use AI better?</p>
+                    <div class="chart-wrapper">
+                        <canvas id="experimentChart"></canvas>
+                    </div>
+                    <div class="chart-insight">
+                        <i class="fas fa-lightbulb"></i>
+                        <p>Students with our framework showed better results in all areas, especially in following guidelines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interview Findings -->
+    <section class="interview-findings">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Student Interview Insights</h2>
+                <p class="section-subtitle">What 8 Carleton students told us about AI use</p>
+            </div>
+            
+            <div class="findings-grid">
+                <div class="finding-card">
+                    <div class="finding-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h4>How do you feel about using AI for schoolwork?</h4>
+                    </div>
+                    <div class="finding-answers">
+                        <div class="answer-stat">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Positive</span>
+                        </div>
+                        <div class="answer-stat">
+                            <span class="stat-number">1</span>
+                            <span class="stat-label">Negative</span>
+                        </div>
+                        <div class="answer-stat">
+                            <span class="stat-number">1</span>
+                            <span class="stat-label">Mixed</span>
+                        </div>
+                    </div>
+                    <div class="finding-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"AI has replaced Google for me. Its explanations sound more human, making complex material easier to understand."</p>
+                    </div>
+                    <div class="finding-insight">
+                        <h5>Key Insight:</h5>
+                        <p>Students see AI as a more accessible learning tool than traditional search engines.</p>
+                    </div>
+                </div>
+                
+                <div class="finding-card">
+                    <div class="finding-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h4>Do you think AI goes against academic integrity?</h4>
+                    </div>
+                    <div class="finding-answers">
+                        <div class="answer-stat">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">It depends</span>
+                        </div>
+                        <div class="answer-stat">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Yes</span>
+                        </div>
+                    </div>
+                    <div class="finding-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"If AI is used only for grammar or ideas, it's fine. But copy-pasting breaks academic integrity."</p>
+                    </div>
+                    <div class="finding-insight">
+                        <h5>Key Insight:</h5>
+                        <p>Students distinguish between using AI for help vs. using AI to replace their own work.</p>
+                    </div>
+                </div>
+                
+                <div class="finding-card">
+                    <div class="finding-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h4>Where should AI be used in school?</h4>
+                    </div>
+                    <div class="finding-list">
+                        <ul>
+                            <li>Understanding assignments</li>
+                            <li>Generating ideas</li>
+                            <li>Grammar checking</li>
+                            <li>Creating study materials</li>
+                            <li>Summarizing notes</li>
+                            <li>Research assistance</li>
+                        </ul>
+                    </div>
+                    <div class="finding-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"AI is a tool. It's up to the user how they use it. A lighter can light a candle or burn a building."</p>
+                    </div>
+                </div>
+                
+                <div class="finding-card">
+                    <div class="finding-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h4>What are the negatives of AI in school?</h4>
+                    </div>
+                    <div class="finding-list">
+                        <ul>
+                            <li>Dependence/over-reliance</li>
+                            <li>Cheating and plagiarism</li>
+                            <li>Students not learning skills</li>
+                            <li>Getting wrong information</li>
+                            <li>False accusations of AI use</li>
+                        </ul>
+                    </div>
+                    <div class="finding-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Students are going to use AI anyway. Schools must adapt to this reality."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiment Results -->
+    <section class="experiment-results">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experiment Results</h2>
+                <p class="section-subtitle">How our framework performed in testing</p>
+            </div>
+            
+            <div class="results-summary">
+                <div class="result-card positive">
+                    <div class="result-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Framework Works</h3>
+                    <p>Students with our framework were 25% more likely to use AI responsibly.</p>
+                </div>
+                
+                <div class="result-card positive">
+                    <div class="result-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Better Time Management</h3>
+                    <p>Framework users spent more time thinking about their approach to tasks.</p>
+                </div>
+                
+                <div class="result-card positive">
+                    <div class="result-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Higher Quality Work</h3>
+                    <p>Work from framework users was rated 15% higher in quality by blind evaluators.</p>
+                </div>
+                
+                <div class="result-card insight">
+                    <div class="result-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Key Finding</h3>
+                    <p>The most effective principle was "Be Aware & Intentional" - students who thought about why they were using AI made better choices.</p>
+                </div>
+            </div>
+            
+            <div class="conclusion">
+                <h3>Overall Conclusion</h3>
+                <p>Our framework <strong>does help students use AI more responsibly</strong>. Students who received the framework guidelines:</p>
+                <ul>
+                    <li>Were more thoughtful about when and how to use AI</li>
+                    <li>Produced higher quality work</li>
+                    <li>Felt more confident in their learning process</li>
+                    <li>Were less likely to misuse AI for academic dishonesty</li>
+                </ul>
+                <p>The framework works best when students understand it's about <strong>learning enhancement, not restriction</strong>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3><i class="fas fa-robot"></i> AI Reliance Study</h3>
+                    <p>Carleton University IRM4900 Capstone Project</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="../index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="framework.html">Framework</a>
+                    <a href="resources.html">Resources</a>
+                </div>
+                <div class="footer-team">
+                    <h4>Research Team</h4>
+                    <p>Erin Van Der Pouw Kraan</p>
+                    <p>Victor Oikawa Lopes</p>
+                    <p>Mohammad Al-Saadi</p>
+                    <p>Mustafa Ali</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Supervisor</h4>
+                    <p>James Brunet</p>
+                    <p>School of Information Technology</p>
+                    <p>Carleton University</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Growing Reliance on AI Study. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+    <script>
+        // Initialize charts
+        document.addEventListener('DOMContentLoaded', function() {
+            // Academic Integrity Chart
+            const integrityCtx = document.getElementById('integrityChart');
+            if (integrityCtx) {
+                new Chart(integrityCtx.getContext('2d'), {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Care About It', "Don't Care", 'Mixed Feelings'],
+                        datasets: [{
+                            data: [4, 4, 0],
+                            backgroundColor: [
+                                '#00B4D8',
+                                '#FF9E6D',
+                                '#6C757D'
+                            ],
+                            borderWidth: 0
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'bottom'
+                            }
+                        }
+                    }
+                });
+            }
+            
+            // Perception Chart
+            const perceptionCtx = document.getElementById('perceptionChart');
+            if (perceptionCtx) {
+                new Chart(perceptionCtx.getContext('2d'), {
+                    type: 'bar',
+                    data: {
+                        labels: ['Helpful Tool', 'Worried About It', 'Replaces Google', 'Anti-AI'],
+                        datasets: [{
+                            data: [6, 1, 1, 1],
+                            backgroundColor: '#0A2472',
+                            borderRadius: 8
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    stepSize: 1
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        }
+                    }
+                });
+            }
+            
+            // Experiment Chart
+            const experimentCtx = document.getElementById('experimentChart');
+            if (experimentCtx) {
+                new Chart(experimentCtx.getContext('2d'), {
+                    type: 'radar',
+                    data: {
+                        labels: ['Task Quality', 'Time Use', 'AI Ethics', 'Learning', 'Satisfaction'],
+                        datasets: [{
+                            label: 'With Framework',
+                            data: [85, 78, 90, 82, 80],
+                            backgroundColor: 'rgba(0, 180, 216, 0.2)',
+                            borderColor: '#00B4D8'
+                        }, {
+                            label: 'Without Framework',
+                            data: [65, 70, 40, 60, 62],
+                            backgroundColor: 'rgba(255, 158, 109, 0.2)',
+                            borderColor: '#FF9E6D'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        scales: {
+                            r: {
+                                beginAtZero: true,
+                                max: 100
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

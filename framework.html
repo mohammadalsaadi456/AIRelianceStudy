@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework - AI Reliance Study</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <i class="fas fa-robot"></i>
+                <span>AI Reliance Study</span>
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-menu" id="navMenu">
+                <a href="../index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html" class="nav-link"><i class="fas fa-users"></i> About</a>
+                <a href="framework.html" class="nav-link active"><i class="fas fa-sitemap"></i> Framework</a>
+                <a href="findings.html" class="nav-link"><i class="fas fa-chart-bar"></i> Findings</a>
+                <a href="experiment.html" class="nav-link"><i class="fas fa-flask"></i> Experiment</a>
+                <a href="resources.html" class="nav-link"><i class="fas fa-folder"></i> Resources</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                <div class="theme-toggle">
+                    <button id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Responsible AI Use Framework</h1>
+            <p>5 guiding principles for using AI ethically in academic work</p>
+        </div>
+    </section>
+
+    <!-- Framework Intro -->
+    <section class="framework-intro">
+        <div class="container">
+            <div class="intro-card">
+                <div class="intro-content">
+                    <h2>Why This Framework?</h2>
+                    <p>Based on interviews with 8 students and academic research, we created 5 simple principles to help students use AI tools like ChatGPT responsibly for schoolwork.</p>
+                    <p>The goal is not to ban AI, but to help students use it as a learning tool rather than a shortcut.</p>
+                    <div class="framework-stats">
+                        <div class="stat">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Principles</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Student Interviews</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">10</div>
+                            <div class="stat-label">Tested With Students</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-image">
+                    <i class="fas fa-sitemap"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Principles -->
+    <section class="principles-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The 5 Principles</h2>
+                <p class="section-subtitle">Click each principle to learn more</p>
+            </div>
+            
+            <div class="principles-container">
+                <!-- Principle 1 -->
+                <div class="principle-card" id="principle1">
+                    <div class="principle-header" onclick="togglePrinciple('principle1')">
+                        <div class="principle-number">01</div>
+                        <div class="principle-title">
+                            <h3>Be Aware & Intentional</h3>
+                            <p>Know why you're using AI</p>
+                        </div>
+                        <div class="principle-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="principle-content">
+                        <div class="principle-details">
+                            <h4>What This Means:</h4>
+                            <p>Before using AI, ask yourself: "Why am I using this? What do I want to learn?" Use AI with a clear purpose, not just because it's easy.</p>
+                            
+                            <h4>Good Examples:</h4>
+                            <ul>
+                                <li>Using AI to explain a concept you don't understand</li>
+                                <li>Asking AI for different viewpoints on a topic</li>
+                                <li>Using AI to check your grammar after you've written something</li>
+                            </ul>
+                            
+                            <h4>Avoid:</h4>
+                            <ul>
+                                <li>Copying AI answers without understanding them</li>
+                                <li>Using AI for every single assignment</li>
+                                <li>Letting AI do all the thinking for you</li>
+                            </ul>
+                            
+                            <div class="principle-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"AI should help you learn, not replace learning."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Principle 2 -->
+                <div class="principle-card" id="principle2">
+                    <div class="principle-header" onclick="togglePrinciple('principle2')">
+                        <div class="principle-number">02</div>
+                        <div class="principle-title">
+                            <h3>Follow Academic Integrity</h3>
+                            <p>Be honest about your work</p>
+                        </div>
+                        <div class="principle-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="principle-content">
+                        <div class="principle-details">
+                            <h4>What This Means:</h4>
+                            <p>Always check what your professor allows. Don't use AI in ways that break your school's rules. When in doubt, ask your instructor.</p>
+                            
+                            <h4>Good Examples:</h4>
+                            <ul>
+                                <li>Using AI for brainstorming ideas (if allowed)</li>
+                                <li>Having AI check your work for errors</li>
+                                <li>Using AI to study for tests</li>
+                            </ul>
+                            
+                            <h4>Avoid:</h4>
+                            <ul>
+                                <li>Submitting AI-written work as your own</li>
+                                <li>Using AI on tests or exams</li>
+                                <li>Breaking specific course rules about AI</li>
+                            </ul>
+                            
+                            <div class="principle-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"If you wouldn't tell your professor you used AI, you probably shouldn't use it."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Principle 3 -->
+                <div class="principle-card" id="principle3">
+                    <div class="principle-header" onclick="togglePrinciple('principle3')">
+                        <div class="principle-number">03</div>
+                        <div class="principle-title">
+                            <h3>Check AI's Work</h3>
+                            <p>AI can be wrong - verify information</p>
+                        </div>
+                        <div class="principle-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="principle-content">
+                        <div class="principle-details">
+                            <h4>What This Means:</h4>
+                            <p>AI sometimes makes mistakes or gives outdated information. Always double-check important facts with reliable sources.</p>
+                            
+                            <h4>Good Examples:</h4>
+                            <ul>
+                                <li>Using AI as a starting point for research</li>
+                                <li>Cross-checking AI information with textbooks or academic articles</li>
+                                <li>Asking AI to explain its sources</li>
+                            </ul>
+                            
+                            <h4>Avoid:</h4>
+                            <ul>
+                                <li>Trusting AI answers without verification</li>
+                                <li>Using AI as your only source of information</li>
+                                <li>Assuming AI is always correct</li>
+                            </ul>
+                            
+                            <div class="principle-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"AI is a research assistant, not a professor."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Principle 4 -->
+                <div class="principle-card" id="principle4">
+                    <div class="principle-header" onclick="togglePrinciple('principle4')">
+                        <div class="principle-number">04</div>
+                        <div class="principle-title">
+                            <h3>Keep Learning Skills</h3>
+                            <p>Don't let AI replace your abilities</p>
+                        </div>
+                        <div class="principle-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="principle-content">
+                        <div class="principle-details">
+                            <h4>What This Means:</h4>
+                            <p>Use AI for help, but make sure you're still developing important skills like writing, critical thinking, and problem-solving.</p>
+                            
+                            <h4>Good Examples:</h4>
+                            <ul>
+                                <li>Writing your own draft first, then using AI for editing</li>
+                                <li>Solving problems yourself before checking AI's solution</li>
+                                <li>Practicing skills without AI regularly</li>
+                            </ul>
+                            
+                            <h4>Avoid:</h4>
+                            <ul>
+                                <li>Letting AI do all your writing for you</li>
+                                <li>Forgetting how to do basic tasks without AI</li>
+                                <li>Relying on AI for skills you need to learn</li>
+                            </ul>
+                            
+                            <div class="principle-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"Use AI as training wheels, not the entire bicycle."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Principle 5 -->
+                <div class="principle-card" id="principle5">
+                    <div class="principle-header" onclick="togglePrinciple('principle5')">
+                        <div class="principle-number">05</div>
+                        <div class="principle-title">
+                            <h3>Be Open About AI Use</h3>
+                            <p>Tell people when you use AI help</p>
+                        </div>
+                        <div class="principle-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="principle-content">
+                        <div class="principle-details">
+                            <h4>What This Means:</h4>
+                            <p>When appropriate, be honest about using AI. This builds trust and helps others understand your process.</p>
+                            
+                            <h4>Good Examples:</h4>
+                            <ul>
+                                <li>Telling group members you used AI for research</li>
+                                <li>Adding a note when AI helped with editing</li>
+                                <li>Being transparent with professors about AI use</li>
+                            </ul>
+                            
+                            <h4>Avoid:</h4>
+                            <ul>
+                                <li>Hiding AI use when it's important to disclose</li>
+                                <li>Letting others think AI work is entirely yours</li>
+                                <li>Being secretive about AI assistance</li>
+                            </ul>
+                            
+                            <div class="principle-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"Honesty about AI builds trust and better learning."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download-section">
+        <div class="container">
+            <div class="download-card">
+                <div class="download-content">
+                    <h2>Download the Complete Framework</h2>
+                    <p>Get the full PDF version with more examples, case studies, and implementation tips.</p>
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download Framework PDF
+                    </a>
+                </div>
+                <div class="download-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3><i class="fas fa-robot"></i> AI Reliance Study</h3>
+                    <p>Carleton University IRM4900 Capstone Project</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="../index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="findings.html">Findings</a>
+                    <a href="resources.html">Resources</a>
+                </div>
+                <div class="footer-team">
+                    <h4>Research Team</h4>
+                    <p>Erin Van Der Pouw Kraan</p>
+                    <p>Victor Oikawa Lopes</p>
+                    <p>Mohammad Al-Saadi</p>
+                    <p>Mustafa Ali</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Supervisor</h4>
+                    <p>James Brunet</p>
+                    <p>School of Information Technology</p>
+                    <p>Carleton University</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Growing Reliance on AI Study. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+    <script>
+        // Framework toggle function
+        function togglePrinciple(principleId) {
+            const principle = document.getElementById(principleId);
+            principle.classList.toggle('expanded');
+            
+            const icon = principle.querySelector('.principle-toggle i');
+            if (principle.classList.contains('expanded')) {
+                icon.className = 'fas fa-chevron-up';
+            } else {
+                icon.className = 'fas fa-chevron-down';
+            }
+        }
+    </script>
+</body>
+</html>

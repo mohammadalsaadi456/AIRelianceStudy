@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AI Reliance Study</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <i class="fas fa-robot"></i>
+                <span>AI Reliance Study</span>
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-menu" id="navMenu">
+                <a href="../index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html" class="nav-link"><i class="fas fa-users"></i> About</a>
+                <a href="framework.html" class="nav-link"><i class="fas fa-sitemap"></i> Framework</a>
+                <a href="findings.html" class="nav-link"><i class="fas fa-chart-bar"></i> Findings</a>
+                <a href="experiment.html" class="nav-link"><i class="fas fa-flask"></i> Experiment</a>
+                <a href="resources.html" class="nav-link"><i class="fas fa-folder"></i> Resources</a>
+                <a href="contact.html" class="nav-link active"><i class="fas fa-envelope"></i> Contact</a>
+                <div class="theme-toggle">
+                    <button id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our research team</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <h2>Send Us a Message</h2>
+                    <p>Have questions about our research? Want to collaborate? We'd love to hear from you!</p>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="">Select a topic</option>
+                            <option value="research">Research Questions</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="media">Media Inquiry</option>
+                            <option value="presentation">Presentation Request</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+                
+                <div class="form-note">
+                    <p><i class="fas fa-info-circle"></i> We typically respond within 2-3 business days.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Contacts -->
+    <section class="team-contacts">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Direct Team Contacts</h2>
+                <p class="section-subtitle">Email our team members directly</p>
+            </div>
+            
+            <div class="contacts-grid">
+                <div class="contact-card">
+                    <div class="contact-avatar">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Erin Van Der Pouw Kraan</h3>
+                    <p class="contact-role">Lead Researcher</p>
+                    <p class="contact-email">
+                        <i class="fas fa-envelope"></i>
+                        erinvanderpouwkraan@cmail.carleton.ca
+                    </p>
+                    <p class="contact-focus">Interviews & Ethics</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-avatar">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Victor Oikawa Lopes</h3>
+                    <p class="contact-role">Research Coordinator</p>
+                    <p class="contact-email">
+                        <i class="fas fa-envelope"></i>
+                        victoroikawalopes@cmail.carleton.ca
+                    </p>
+                    <p class="contact-focus">Framework & Experiment</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-avatar">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Mohammad Al-Saadi</h3>
+                    <p class="contact-role">Technical Lead</p>
+                    <p class="contact-email">
+                        <i class="fas fa-envelope"></i>
+                        mohammadalsaao@cmail.carleton.ca
+                    </p>
+                    <p class="contact-focus">Website & Data Viz</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-avatar">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Mustafa Ali</h3>
+                    <p class="contact-role">Research Assistant</p>
+                    <p class="contact-email">
+                        <i class="fas fa-envelope"></i>
+                        mustafaali6@cmail.carleton.ca
+                    </p>
+                    <p class="contact-focus">Analysis & Reports</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supervisor Contact -->
+    <section class="supervisor-contact">
+        <div class="container">
+            <div class="supervisor-card">
+                <div class="supervisor-avatar">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="supervisor-details">
+                    <h2>Academic Supervisor</h2>
+                    <h3>James Brunet</h3>
+                    <p class="supervisor-title">Professor, School of Information Technology</p>
+                    <p class="supervisor-institution">Carleton University</p>
+                    <p class="supervisor-email">
+                        <i class="fas fa-envelope"></i>
+                        JamesBrunet@cunet.carleton.ca
+                    </p>
+                    <p class="supervisor-phone">
+                        <i class="fas fa-phone"></i>
+                        (613) 520-2600 ext. 1234
+                    </p>
+                    <p class="supervisor-office">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Carleton University, Ottawa, ON
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3><i class="fas fa-robot"></i> AI Reliance Study</h3>
+                    <p>Carleton University IRM4900 Capstone Project</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="../index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="framework.html">Framework</a>
+                    <a href="findings.html">Findings</a>
+                </div>
+                <div class="footer-team">
+                    <h4>Research Team</h4>
+                    <p>Erin Van Der Pouw Kraan</p>
+                    <p>Victor Oikawa Lopes</p>
+                    <p>Mohammad Al-Saadi</p>
+                    <p>Mustafa Ali</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Supervisor</h4>
+                    <p>James Brunet</p>
+                    <p>School of Information Technology</p>
+                    <p>Carleton University</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Growing Reliance on AI Study. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+    <script>
+        // Simple form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Simple validation
+            if (!name || !email || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // In a real application, you would send this data to a server
+            // For now, we'll just show a success message
+            alert(`Thank you ${name}! Your message has been sent. We'll respond to ${email} soon.`);
+            
+            // Reset the form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
