@@ -376,7 +376,7 @@
             button.addEventListener('click', function(e) {
                 if (this.textContent.includes('Download')) {
                     const resourceName = this.closest('.resource-card').querySelector('h3').textContent;
-                    alert(`Thank you! Your download of "${resourceName}" would start now.\n\nIn a real implementation, this would download the actual file.`);
+                    alert(`Thank you! Your download of "${resourceName}" would start now.`);
                 }
             });
         });
