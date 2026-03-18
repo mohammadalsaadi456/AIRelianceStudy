@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Reliance Study</title>
+    <title>AI Reliance Study – Carleton University</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
+            <a href="#home" class="nav-logo">
                 <i class="fas fa-robot"></i>
                 <span>AI Reliance Study</span>
             </a>
@@ -23,31 +22,31 @@
             </button>
             
             <div class="nav-menu" id="navMenu">
-                <a href="index.html" class="nav-link active">
+                <a href="#home" class="nav-link active">
                     <i class="fas fa-home"></i>
                     <span>Home</span>
                 </a>
-                <a href="about.html" class="nav-link">
+                <a href="#about" class="nav-link">
                     <i class="fas fa-users"></i>
                     <span>About</span>
                 </a>
-                <a href="framework.html" class="nav-link">
+                <a href="#framework" class="nav-link">
                     <i class="fas fa-sitemap"></i>
                     <span>Framework</span>
                 </a>
-                <a href="findings.html" class="nav-link">
+                <a href="#findings" class="nav-link">
                     <i class="fas fa-chart-bar"></i>
                     <span>Findings</span>
                 </a>
-                <a href="experiment.html" class="nav-link">
+                <a href="#experiment" class="nav-link">
                     <i class="fas fa-flask"></i>
                     <span>Experiment</span>
                 </a>
-                <a href="resources.html" class="nav-link">
+                <a href="#resources" class="nav-link">
                     <i class="fas fa-folder"></i>
                     <span>Resources</span>
                 </a>
-                <a href="contact.html" class="nav-link">
+                <a href="#contact" class="nav-link">
                     <i class="fas fa-envelope"></i>
                     <span>Contact</span>
                 </a>
@@ -61,29 +60,28 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
         <div class="hero-background">
-            <div class="ai-particle"></div>
-            <div class="ai-particle"></div>
-            <div class="ai-particle"></div>
+            <div class="hero-particles"></div>
         </div>
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">AI Reliance Study</h1>
-                <p class="hero-subtitle">A Student Led Framework for Responsible AI Use in Schoolwork</p>
-                <p class="hero-description">Exploring the effects of AI in education and developing practical guidelines for responsible implementation through research, interviews, and experiments.</p>
+                <p class="hero-subtitle">A Student-Led Guide to Using AI Wisely in School</p>
+                <p class="hero-description">We talked to students, ran experiments, and built a simple framework to help you use AI like ChatGPT as a learning tool, not a crutch. No complicated rules just practical advice.</p>
                 <div class="hero-buttons">
-                    <a href="framework.html" class="btn btn-primary">
+                    <a href="#framework" class="btn btn-primary">
                         <i class="fas fa-sitemap"></i>
-                        Explore Framework
+                        See the Framework
                     </a>
-                    <a href="findings.html" class="btn btn-secondary">
+                    <a href="#findings" class="btn btn-secondary">
                         <i class="fas fa-chart-line"></i>
-                        View Findings
+                        What We Found
                     </a>
                 </div>
             </div>
+            
             <div class="hero-visual">
                 <div class="ai-network">
                     <div class="network-node node-main">
@@ -101,21 +99,17 @@
                     <div class="network-node node-4">
                         <i class="fas fa-users"></i>
                     </div>
-                    <div class="network-connection conn-1"></div>
-                    <div class="network-connection conn-2"></div>
-                    <div class="network-connection conn-3"></div>
-                    <div class="network-connection conn-4"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Overview Section -->
+    <!-- Quick Project Overview -->
     <section class="overview">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Project Overview</h2>
-                <p class="section-subtitle">Understanding AI reliance through comprehensive research</p>
+                <h2 class="section-title">Our Mission</h2>
+                <p class="section-subtitle">To help students use AI without losing their own skills.</p>
             </div>
             
             <div class="overview-grid">
@@ -124,7 +118,7 @@
                         <i class="fas fa-bullseye"></i>
                     </div>
                     <h3>Goal</h3>
-                    <p>Develop a practical framework for responsible AI use in academic settings, supported by moral and academic ethics.</p>
+                    <p>Create a simple, practical guide for responsible AI use, based on what real students told us.</p>
                 </div>
                 
                 <div class="overview-card">
@@ -132,7 +126,7 @@
                         <i class="fas fa-search"></i>
                     </div>
                     <h3>Research</h3>
-                    <p>Analyze AI usage patterns, ethical concerns, and psychological impacts through interviews and controlled experiments.</p>
+                    <p>We interviewed 8 students and ran an experiment with 8 more to see how a framework changes behavior.</p>
                 </div>
                 
                 <div class="overview-card">
@@ -140,7 +134,7 @@
                         <i class="fas fa-lightbulb"></i>
                     </div>
                     <h3>Framework</h3>
-                    <p>Create 5-6 guiding principles for ethical AI use, co-designed with student input and validated through experimentation.</p>
+                    <p>5 evidence‑based principles to keep you learning and thinking, even when you use AI.</p>
                 </div>
                 
                 <div class="overview-card">
@@ -148,7 +142,7 @@
                         <i class="fas fa-globe-americas"></i>
                     </div>
                     <h3>Impact</h3>
-                    <p>Promote digital literacy, reduce AI dependence, and support academic integrity in the age of artificial intelligence.</p>
+                    <p>Our framework helped students produce better work and be more thoughtful about AI.</p>
                 </div>
             </div>
         </div>
@@ -160,65 +154,617 @@
             <div class="stats-grid">
                 <div class="stat-item">
                     <div class="stat-number">8</div>
-                    <div class="stat-label">Student Interviews</div>
+                    <div class="stat-label">Students Interviewed</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">10</div>
+                    <div class="stat-number">8</div>
                     <div class="stat-label">Experiment Participants</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">5</div>
-                    <div class="stat-label">Framework Principles</div>
+                    <div class="stat-label">Evidence‑Based Principles</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">4</div>
+                    <div class="stat-number">8</div>
                     <div class="stat-label">Months of Research</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Quick Links -->
-    <section class="quick-links">
+    <!-- ABOUT SECTION (Team & Timeline) -->
+    <section id="about" class="about-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Explore Our Project</h2>
-                <p class="section-subtitle">Dive deeper into our research components</p>
+                <h2 class="section-title">Meet the Team</h2>
+                <p class="section-subtitle">Four students from Carleton University who wanted to make AI easier to understand.</p>
             </div>
             
-            <div class="links-grid">
-                <a href="framework.html" class="link-card">
-                    <div class="link-icon">
-                        <i class="fas fa-sitemap"></i>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <i class="fas fa-user-graduate"></i>
                     </div>
-                    <h3>AI Framework</h3>
-                    <p>Interactive guide to responsible AI use in academics with 5 guiding principles</p>
-                    <div class="link-arrow">
-                        <i class="fas fa-arrow-right"></i>
+                    <div class="team-card-inner">
+                        <h3>Erin Van Der Pouw Kraan</h3>
+                        <p class="team-role">Lead Researcher</p>
+                        <p class="team-email">erinvanderpouwkraan@cmail.carleton.ca</p>
+                        <div class="team-tags">
+                            <span class="tag">Interviews</span>
+                            <span class="tag">Ethics</span>
+                        </div>
+                        <p class="team-bio">Led the interviews and made sure our study was fair and followed the rules.</p>
                     </div>
-                </a>
+                </div>
                 
-                <a href="findings.html" class="link-card">
-                    <div class="link-icon">
-                        <i class="fas fa-chart-pie"></i>
+                <div class="team-card">
+                    <div class="team-image">
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Research Findings</h3>
-                    <p>Interview insights, experiment results, and data visualizations</p>
-                    <div class="link-arrow">
-                        <i class="fas fa-arrow-right"></i>
+                    <div class="team-card-inner">
+                        <h3>Victor Oikawa Lopes</h3>
+                        <p class="team-role">Research Coordinator</p>
+                        <p class="team-email">victoroikawalopes@cmail.carleton.ca</p>
+                        <div class="team-tags">
+                            <span class="tag">Framework</span>
+                            <span class="tag">Data</span>
+                        </div>
+                        <p class="team-bio">Turned interview responses into our 5 guiding principles and planned the experiment.</p>
                     </div>
-                </a>
+                </div>
                 
-                <a href="experiment.html" class="link-card">
-                    <div class="link-icon">
-                        <i class="fas fa-flask"></i>
+                <div class="team-card">
+                    <div class="team-image">
+                        <i class="fas fa-laptop-code"></i>
                     </div>
-                    <h3>Experiment Design</h3>
-                    <p>Methodology, tasks, and participant analysis from our controlled study</p>
-                    <div class="link-arrow">
-                        <i class="fas fa-arrow-right"></i>
+                    <div class="team-card-inner">
+                        <h3>Mohammad Al-Saadi</h3>
+                        <p class="team-role">Technical Lead</p>
+                        <p class="team-email">mohammadalsaao@cmail.carleton.ca</p>
+                        <div class="team-tags">
+                            <span class="tag">Website</span>
+                            <span class="tag">Charts</span>
+                        </div>
+                        <p class="team-bio">Built this website and made our data easy to see with charts.</p>
                     </div>
-                </a>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-image">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="team-card-inner">
+                        <h3>Mustafa Ali</h3>
+                        <p class="team-role">Technical Coordinator</p>
+                        <p class="team-email">mustafaali6@cmail.carleton.ca</p>
+                        <div class="team-tags">
+                            <span class="tag">Research</span>
+                            <span class="tag">Analysis</span>
+                        </div>
+                        <p class="team-bio">Also helped with the website and worked on the poster for the project.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Methodology Timeline -->
+            <div class="timeline">
+                <h2 class="section-title">Our Journey</h2>
+                <div class="timeline-item">
+                    <div class="timeline-date">Sept 2025</div>
+                    <div class="timeline-content">
+                        <h3>Started the Project</h3>
+                        <p>Picked our topic and figured out what questions we wanted to answer.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Oct 2025</div>
+                    <div class="timeline-content">
+                        <h3>Got Ethics Approved</h3>
+                        <p>Got the green light from Carleton to safely interview students.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Dec 2025</div>
+                    <div class="timeline-content">
+                        <h3>Interviewed Students</h3>
+                        <p>Talked to 8 students about their real thoughts on AI.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan 2026</div>
+                    <div class="timeline-content">
+                        <h3>Built the Framework</h3>
+                        <p>Created 5 evidence‑based rules based on interviews and research.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Feb 2026</div>
+                    <div class="timeline-content">
+                        <h3>Ran the Experiment</h3>
+                        <p>Tested our framework with 8 students doing real school tasks.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Apr 2026</div>
+                    <div class="timeline-content">
+                        <h3>Shared Our Findings</h3>
+                        <p>Presented everything at the Carleton Capstone Fair.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Supervisor Section -->
+            <div class="supervisor-card">
+                <div class="supervisor-image">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="supervisor-info">
+                    <h2>Our Supervisor</h2>
+                    <h3>James Brunet</h3>
+                    <p class="supervisor-title">Professor, School of Information Technology</p>
+                    <p class="supervisor-institution">Carleton University</p>
+                    <p class="supervisor-bio">Helped us stay on track, design our study the right way, and turn our ideas into real research.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== UPDATED FRAMEWORK SECTION with detailed methodology phases ===== -->
+    <section id="framework" class="framework-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The AI Learning Framework</h2>
+                <p class="section-subtitle">A research‑backed approach to using AI wisely, developed from student interviews and validated through experimentation.</p>
+            </div>
+
+            <!-- How We Built This Framework -->
+            <div class="framework-methodology">
+                <h3 class="section-title" style="font-size: 2.2rem;">How We Built This Framework</h3>
+                <div class="methodology-grid">
+                    <!-- Phase 1 -->
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Phase 1 <br> <span>Student Interviews</span></h4>
+                        <p>We talked to 8 students about their AI usage, concerns, and experiences. Their responses shaped our initial principles.</p>
+                    </div>
+                    <!-- Phase 2 -->
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h4>Phase 2 <br> <span>Thematic Analysis</span></h4>
+                        <p>We coded interview responses and identified 5 core themes that students cared about most.</p>
+                    </div>
+                    <!-- Phase 3 -->
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h4>Phase 3 <br> <span>Literature Review</span></h4>
+                        <p>We validated our themes against peer‑reviewed research on AI literacy, accuracy, and learning outcomes.</p>
+                    </div>
+                    <!-- Phase 4 -->
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h4>Phase 4 <br> <span>Experimental Validation</span></h4>
+                        <p>Tested the framework with 8 students. Those using it produced higher quality work and showed more thoughtful AI use.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The 5 Principles -->
+            <div class="principles-container">
+                <!-- Principle 1 -->
+                <div class="principle-card" id="principle1">
+                    <div class="principle-header" onclick="togglePrinciple('principle1')">
+                        <div class="principle-number">01</div>
+                        <div class="principle-title">
+                            <h3>Understand the “why” (AI literacy)</h3>
+                            <p>Know how the AI generated its response – don’t just copy.</p>
+                        </div>
+                        <div class="principle-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="principle-content">
+                        <div class="principle-details">
+                            <h4>📘 What the research says</h4>
+                            <p><strong>Gong et al.:</strong> Even students exposed to AI lack understanding of AI ethics. <br> <strong>Boscardin et al. (2024):</strong> Accuracy, bias, and ethical use must be considered. <br> <strong>Harvard/Stanford RCT (2025):</strong> Using AI as a “scaffolded tutor” <em>doubles learning gains</em>.</p>
+                            <h4>🗣️ What students told us</h4>
+                            <p>“I use AI to explain concepts in a more human way, but I don’t always know if I can trust it.”</p>
+                            <div class="principle-quote">
+                                <i class="fas fa-lightbulb"></i>
+                                <p><strong>Try this:</strong> Instead of “what’s the answer?” ask “walk me through the steps to solve this.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Principle 2 -->
+                <div class="principle-card" id="principle2">
+                    <div class="principle-header" onclick="togglePrinciple('principle2')">
+                        <div class="principle-number">02</div>
+                        <div class="principle-title">
+                            <h3>Always fact‑check</h3>
+                            <p>AI invents sources and details – especially for niche topics.</p>
+                        </div>
+                        <div class="principle-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="principle-content">
+                        <div class="principle-details">
+                            <h4>📘 What the research says</h4>
+                            <p><strong>Johnson et al. (2023):</strong> Only <strong>57.8%</strong> of AI medical answers were “nearly all correct.” <br> <strong>Linardon et al. (2025):</strong> 65% of GPT‑4o citations unreliable; for niche topics fabrication jumps from 6% → 29%.</p>
+                            <h4>🗣️ Student insight</h4>
+                            <p>“AI gave me a perfect quote with an author – but the paper didn’t exist.”</p>
+                            <div class="principle-quote">
+                                <i class="fas fa-search"></i>
+                                <p><strong>Try this:</strong> Verify every citation on Google Scholar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Principle 3 -->
+                <div class="principle-card" id="principle3">
+                    <div class="principle-header" onclick="togglePrinciple('principle3')">
+                        <div class="principle-number">03</div>
+                        <div class="principle-title">
+                            <h3>Don’t form bad habits</h3>
+                            <p>Consider what you already know before turning to AI.</p>
+                        </div>
+                        <div class="principle-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="principle-content">
+                        <div class="principle-details">
+                            <h4>📘 Based on interview data</h4>
+                            <p>From Q6: overuse and dependence were the <strong>main concerns</strong>. Students said consulting AI before thinking twice can weaken your own skills.</p>
+                            <h4>🗣️ What they said</h4>
+                            <p>“Dependence is the biggest negative – I’m worried I’ll lose my ability to write.”</p>
+                            <div class="principle-quote">
+                                <i class="fas fa-brain"></i>
+                                <p><strong>Try this:</strong> Work on a problem for 10–15 minutes on your own first.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Principle 4 -->
+                <div class="principle-card" id="principle4">
+                    <div class="principle-header" onclick="togglePrinciple('principle4')">
+                        <div class="principle-number">04</div>
+                        <div class="principle-title">
+                            <h3>AI is a tool, not a crutch</h3>
+                            <p>Be mindful of its limitations – it’s up to you how you use it.</p>
+                        </div>
+                        <div class="principle-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="principle-content">
+                        <div class="principle-details">
+                            <h4>📘 Categorized from Q1 & Q4</h4>
+                            <p>Students find AI useful for: repetitive work, rewording, idea generation, summarizing, creating study guides. <br> <strong>Student analogy:</strong> “AI is like a lighter. It can light a candle or burn down a building.”</p>
+                            <div class="principle-quote">
+                                <i class="fas fa-tools"></i>
+                                <p><strong>Try this:</strong> Use AI for brainstorming, then write the final draft yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Principle 5 -->
+                <div class="principle-card" id="principle5">
+                    <div class="principle-header" onclick="togglePrinciple('principle5')">
+                        <div class="principle-number">05</div>
+                        <div class="principle-title">
+                            <h3>You own the consequences</h3>
+                            <p>The repercussions apply to you, not to the AI.</p>
+                        </div>
+                        <div class="principle-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="principle-content">
+                        <div class="principle-details">
+                            <h4>📘 From Q1 & Q2</h4>
+                            <p>Every student knows the academic integrity rules, but <strong>only half personally care</strong> – the rest just avoid getting caught. “Individuals have found ways to cheat the system – consider if you’re cheating yourself.”</p>
+                            <div class="principle-quote">
+                                <i class="fas fa-gavel"></i>
+                                <p><strong>Remember:</strong> If you misuse AI, you miss out on learning.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FINDINGS SECTION ===== -->
+    <section id="findings" class="findings-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What We Found</h2>
+                <p class="section-subtitle">Real data from 8 Carleton students – full demographics from our interviews.</p>
+            </div>
+            
+            <!-- Demographics summary -->
+            <div class="intro-card">
+                <div class="intro-content">
+                    <h2>Participant Snapshot</h2>
+                    <p>We interviewed 8 undergraduate students (Bachelor's level) from Carleton. Here’s who they were:</p>
+                    <div class="framework-stats">
+                        <div class="stat">
+                            <div class="stat-number">7</div>
+                            <div class="stat-label">Men</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">1</div>
+                            <div class="stat-label">Woman</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">21-23</div>
+                            <div class="stat-label">Age range</div>
+                        </div>
+                    </div>
+                    <p><strong>Ethnicity:</strong> 2 White, 4 Asian, 1 Middle Eastern, 1 Black or African American. <br> <strong>Field of study:</strong> 8/8 in Science, Engineering, IT. <br> <strong>CGPA (12‑point scale):</strong> ranged from 6.0 to 11.5.</p>
+                </div>
+                <div class="intro-image">
+                    <i class="fas fa-clipboard-list"></i>
+                </div>
+            </div>
+
+            <!-- Charts -->
+            <div class="charts-container">
+                <div class="chart-card">
+                    <h3>Academic integrity: do you care?</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="integrityChart"></canvas>
+                    </div>
+                    <p class="chart-insight"><i class="fas fa-lightbulb"></i> Split: 4 follow rules because they want to learn, 4 just avoid trouble.</p>
+                </div>
+                
+                <div class="chart-card">
+                    <h3>Perception of AI</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="perceptionChart"></canvas>
+                    </div>
+                    <p class="chart-insight"><i class="fas fa-lightbulb"></i> Most see AI as helpful, but dependence worries remain.</p>
+                </div>
+
+                <div class="chart-card">
+                    <h3>AI usage frequency</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="usageChart"></canvas>
+                    </div>
+                    <p class="chart-insight"><i class="fas fa-lightbulb"></i> 5 frequent, 2 rare, 1 consistent (daily).</p>
+                </div>
+
+                <div class="chart-card">
+                    <h3>Self‑reported reliance on AI</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="relianceChart"></canvas>
+                    </div>
+                    <p class="chart-insight"><i class="fas fa-lightbulb"></i> Only 2 of 8 consider themselves reliant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIMENT SECTION -->
+    <section id="experiment" class="experiment-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Experiment: Does the Framework Work?</h2>
+                <p class="section-subtitle">We put our 5 principles to the test with real students doing real tasks.</p>
+            </div>
+            
+            <div class="experiment-overview">
+                <div class="overview-grid">
+                    <div class="overview-item">
+                        <div class="overview-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>8 Students</h3>
+                        <p>4 got the framework, 4 didn't.</p>
+                    </div>
+                    
+                    <div class="overview-item">
+                        <div class="overview-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h3>6 Tasks</h3>
+                        <p>Summarizing, writing, debugging, scheduling.</p>
+                    </div>
+                    
+                    <div class="overview-item">
+                        <div class="overview-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>About 1 Hour</h3>
+                        <p>Each student worked through tasks at their own pace.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experiment-results">
+                <h2 class="section-title">So, Did It Help?</h2>
+                <p class="section-subtitle">Yes – students with the framework were more thoughtful and produced better work.</p>
+                
+                <div class="results-summary">
+                    <div class="result-card positive">
+                        <div class="result-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Better Quality Work</h3>
+                        <p>Blind evaluators rated the work from the group with our framework higher.</p>
+                    </div>
+                    
+                    <div class="result-card positive">
+                        <div class="result-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>More Thoughtful</h3>
+                        <p>They were more intentional about when and why they used AI.</p>
+                    </div>
+                    
+                    <div class="result-card insight">
+                        <div class="result-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Slower, But Smarter</h3>
+                        <p>Students without the framework finished faster, but quality suffered.</p>
+                    </div>
+                </div>
+                
+                <div class="conclusion">
+                    <h3>The Bottom Line</h3>
+                    <p>Our 5 principles made a difference. Students who had them thought more about their choices. They used AI as a tool to help them learn, not just to get the task done.</p>
+                     <div class="chart-card" style="margin-top: 30px;">
+                        <h3>Comparison: Framework vs. No Framework</h3>
+                        <div class="chart-wrapper">
+                            <canvas id="experimentChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESOURCES SECTION -->
+    <section id="resources" class="resources-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resources & Downloads</h2>
+                <p class="section-subtitle">All our materials, free for you to use.</p>
+            </div>
+            
+            <div class="resources-grid">
+                <div class="resource-card primary">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>The 5 Rules Poster</h3>
+                    <p class="resource-description">A simple, printable poster with our framework. Perfect for your study wall.</p>
+                    <a href="#" class="btn btn-primary download-btn">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Full Research Report</h3>
+                    <p class="resource-description">All the details: methods, interview questions, experiment tasks, and data analysis.</p>
+                    <a href="#" class="btn btn-primary download-btn">
+                        <i class="fas fa-download"></i> Download Report
+                    </a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-presentation"></i>
+                    </div>
+                    <h3>Capstone Slides</h3>
+                    <p class="resource-description">The slides we used to present our project at the fair.</p>
+                    <a href="#" class="btn btn-primary download-btn">
+                        <i class="fas fa-download"></i> Download Slides
+                    </a>
+                </div>
+            </div>
+
+            <h2 class="section-title">Study Materials</h2>
+            <div class="materials-grid">
+                <div class="material-card">
+                    <div class="material-header">
+                        <i class="fas fa-clipboard-check"></i>
+                        <h3>Ethics & Consent</h3>
+                    </div>
+                    <ul class="material-list">
+                        <li><a href="#"><i class="fas fa-file-alt"></i> Consent Form (Interview)</a></li>
+                        <li><a href="#"><i class="fas fa-file-contract"></i> Consent Form (Experiment)</a></li>
+                    </ul>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-header">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Our Questions</h3>
+                    </div>
+                    <ul class="material-list">
+                        <li><a href="#"><i class="fas fa-list-ol"></i> Interview Guide</a></li>
+                        <li><a href="#"><i class="fas fa-tasks"></i> Experiment Tasks</a></li>
+                    </ul>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Data</h3>
+                    </div>
+                    <ul class="material-list">
+                        <li><a href="#"><i class="fas fa-chart-line"></i> Anonymized Results</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Questions about our research? Want to collaborate? Reach out!</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+                
+                <div class="contact-info">
+                    <h3>Email Us Directly</h3>
+                    <p><i class="fas fa-envelope"></i> erinvanderpouwkraan@cmail.carleton.ca</p>
+                    <p><i class="fas fa-envelope"></i> victoroikawalopes@cmail.carleton.ca</p>
+                    <p><i class="fas fa-envelope"></i> mohammadalsaao@cmail.carleton.ca</p>
+                    <p><i class="fas fa-envelope"></i> mustafaali6@cmail.carleton.ca</p>
+                    
+                    <h3 style="margin-top: 30px;">Our Supervisor</h3>
+                    <p><i class="fas fa-user-tie"></i> James Brunet</p>
+                    <p><i class="fas fa-envelope"></i> JamesBrunet@cunet.carleton.ca</p>
+                </div>
             </div>
         </div>
     </section>
@@ -229,41 +775,32 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <h3><i class="fas fa-robot"></i> AI Reliance Study</h3>
-                    <p>Carleton University IRM4900 Capstone Project</p>
-                    <p>Exploring ethical AI use in schoolwork since 2025</p>
+                    <p>Carleton University | IRM4900 Capstone Project</p>
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <a href="index.html">Home</a>
-                    <a href="framework.html">Framework</a>
-                    <a href="findings.html">Findings</a>
-                    <a href="resources.html">Resources</a>
+                    <h4>Explore</h4>
+                    <a href="#framework">Framework</a>
+                    <a href="#findings">Findings</a>
+                    <a href="#experiment">Experiment</a>
                 </div>
                 
                 <div class="footer-team">
-                    <h4>Research Team</h4>
+                    <h4>Team</h4>
                     <p>Erin Van Der Pouw Kraan</p>
                     <p>Victor Oikawa Lopes</p>
                     <p>Mohammad Al-Saadi</p>
                     <p>Mustafa Ali</p>
                 </div>
-                
-                <div class="footer-contact">
-                    <h4>Supervisor</h4>
-                    <p>James Brunet</p>
-                    <p>School of Information Technology</p>
-                    <p>Carleton University</p>
-                </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 The Growing Reliance on AI Study. All rights reserved.</p>
-                <p>Ethics Clearance: TBD | Date: October 15, 2025</p>
+                <p>&copy; 2026 The Growing Reliance on AI Study. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
