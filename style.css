@@ -130,6 +130,7 @@ a {
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    gap: 15px;
 }
 
 .nav-logo {
@@ -144,6 +145,7 @@ a {
     text-decoration: none;
     padding: 8px 0;
     white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .nav-logo i {
@@ -193,7 +195,8 @@ a {
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 8px;
+    flex-wrap: nowrap;
 }
 
 .nav-link {
@@ -207,6 +210,7 @@ a {
     transition: all var(--transition-fast);
     position: relative;
     font-size: 0.95rem;
+    white-space: nowrap;
 }
 
 .nav-link i {
@@ -247,6 +251,10 @@ a {
     background-color: rgba(0,180,216,0.15);
 }
 
+.theme-toggle {
+    flex-shrink: 0;
+}
+
 .theme-toggle button {
     background: none;
     border: none;
@@ -266,6 +274,7 @@ a {
     transform: rotate(30deg) scale(1.1);
     color: var(--secondary-color);
 }
+
 
 .hero {
     min-height: 100vh;
@@ -1305,6 +1314,20 @@ section {
     color: rgba(255,255,255,0.7);
 }
 
+@media (max-width: 1100px) {
+    .nav-link span {
+        display: none;
+    }
+    
+    .nav-link i {
+        font-size: 1.2rem;
+    }
+    
+    .nav-link {
+        padding: 8px 12px;
+    }
+}
+
 @media (max-width: 992px) {
     .hero .container {
         flex-direction: column;
@@ -1338,9 +1361,18 @@ section {
         padding: 30px;
         height: calc(100vh - 80px);
         overflow-y: auto;
+        z-index: 1000;
+        gap: 15px;
     }
     .nav-menu.active { left: 0; }
-    .nav-link { width: 100%; justify-content: center; }
+    .nav-link { 
+        width: 100%; 
+        justify-content: center;
+        padding: 12px;
+    }
+    .nav-link span {
+        display: inline-block;
+    }
     .methodology-grid { grid-template-columns: 1fr; }
     .principle-header { flex-direction: column; text-align: center; }
     .section-title { font-size: 2rem; }
