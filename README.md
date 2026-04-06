@@ -1,10 +1,11 @@
-AI Reliance Study / Capstone Project:
+AI Reliance Study (Capstone Project):
 
-This is the repository of the files of the AI Reliance Study website. Our overview, goals, framework draft, and team information regarding the experiment are posted on the site. 
-Files
+This is the repository of the files used for the AI Reliance Study website.
 
-Index.html - The structure and written content of the site are stored as a file. It consists of all the sections, headings and paragraphs that are present on the page and is the core of the site.
+index.html - The content of the site are stored as a single one paged file. It consists of all the sections, headings and paragraphs that are presented on the page.
 
-Style.css-   File manages the design of the site. It takes care of the layout, colors, spacing, fonts, and the appearance of the page in order to make it clean and coherent.
+style.css-   This file manages the design of the site. It takes care of the layout, colors, spacing, fonts, and the appearance of the page in order to make it a clean design.
 
-Collectively, these files will form the entire display site on which we can share the current work and also add to the progress of our capstone project website.
+main.js - This file is used for the interactivity of the website, allowing website to run smoothly in a structured fashion.
+
+These files altogether form the entire display site on which we can share the current work and also add to any progress of our capstone project.
